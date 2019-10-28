@@ -13,7 +13,7 @@
     as "Bearer <token>". example "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vd2Fhc3"
 
 5. To create a category, make a POST call to "basicapp/api/create/category" endpoint with body as:
-            ```json
+           ```json
             {"categoryName":"C2"}
             ```
     
