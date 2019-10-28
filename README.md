@@ -1,7 +1,7 @@
 
 1. To deploy the webapp, build the project using command "mvn clean install".This will generate a deployable WAR file.
     (WAR file is already in the repo, you can directly use it). Put this WAR file in your local TOMCAT server's webapps folder
-    and extract it into folder "basciapp"(This basicapp will be the context of the app). After this start the TOMCAT server.
+    and extract it into folder "basicapp"(This basicapp will be the context of the app). After this start the TOMCAT server.
     
 2. Opne a rest-client like POSTMAN to test the APIs.
 
