@@ -42,7 +42,7 @@
 10. Please note that creat/update/delete requires JWT token for authorization and token expiry limit is 5 minutes. Read of category and     prodcuts does not require any token.
 
 
-Resources used:
+References:
 * [Rest api using Jersey](https://antoniogoncalves.org/2016/10/03/securing-jax-rs-endpoints-with-jwt/).</br>
 * [JWT library](https://github.com/jwtk/jjwt).</br>
 
