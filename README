@@ -1,1 +1,17 @@
 
+1. To deploy the webapp, build the project using command "mvn clean install".This will generate a deployable WAR file.
+    (WAR file is already in the repo, you can directly use it). Put this WAR file in your local TOMCAT server's webapps folder
+    and extract it into folder "basciapp"(This basicapp will be the context of the app). After this start the TOMCAT server.
+    
+2. Opne a rest-client like POSTMAN to test the APIs.
+
+3. Data is persisted in-memory, so initially there are no products and categories.
+
+4. To call API endpoints for create or update or delete of product/category, you have to fetch the "JWT" token first.
+    Make a call to "localhost:<port>/basicapp/api/oauth/token" endpoint with client_id="qwerty" and cliend_secret="Secure22" and 
+    this content will be of type "application/x-www-form-urlencoded". After getting the token, add this to authorization header
+    as "Bearer <token>". example "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vd2Fhc3"
+
+5. To create a category, make a POST call to "basicapp/api/create/category" endpoint with body as:
+            ```{"categoryName":"C2"}```
+    
