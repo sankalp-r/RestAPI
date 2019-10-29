@@ -22,7 +22,7 @@
       ```
       Note that while creating a product, the mentioned category must exist.
       
-6. To update a category, make a PUT call to "/basicapp/api/update/category/&ltname of category&gt" and body as:
+6. To update a category, make a PUT call to "/basicapp/api/update/category/\<name of category>" and body as:
     ```json
     {"categoryName": "C4"}
      ```
