@@ -27,14 +27,14 @@
     {"categoryName": "C4"}
      ```
     This call will update the existing category to "C4".
-    Similarly to update a product, make a PUT call to "/basicapp/api/update/product/&ltproductName&gt" and body as:
+    Similarly to update a product, make a PUT call to "/basicapp/api/update/product/\<productName>" and body as:
      ```json
     {"productName":"P2","categoryList":[{"categoryName":"C3"}]}
      ```
     Above call will update Product "P2" and add new category "C3" to it(given that category exists).
 
-7. To delete a category, make a DELETE call to "/basicapp/api/delete/category/&ltcategoryName&gt"(replace <categoryName> with category to           delete).
-    Simlarly to delete a product, make a DELETE call to "basicapp/api/delete/product/&ltproductName&gt".
+7. To delete a category, make a DELETE call to "/basicapp/api/delete/category/\<categoryName>"(replace <categoryName> with category to           delete).
+    Simlarly to delete a product, make a DELETE call to "basicapp/api/delete/product/\<productName>".
 
 8. To read all catgories, make a GET call to "/basicapp/api/read/category".(You can change header "ACCEPT" to "application/json" or          "application/xml").
     Similarly to read all products, make a GET call to "/basicapp/api/read/product". To read products of specific category make GET call     as "/basicapp/api/read/product?cat=C2", where you can specify query parameter "cat" to filter the product of specified category.
